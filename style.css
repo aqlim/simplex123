@@ -1,0 +1,195 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --primary: #21a5d5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background: var(--primary);
+    color: white;
+}
+
+.left,
+.right,
+.email,
+.location {
+    display: flex;
+    /* justify-content: space-around;
+    align-items: center; */
+    gap: 1rem;
+}
+
+.bi-envelope-fill,
+.bi-geo-alt-fill {
+    color: black;
+}
+
+.right {
+    display: flex;
+    color: #5dbbde;
+    font-size: 1.2rem;
+    gap: 1rem;
+}
+.container{
+box-shadow: 2px 5px 15px lightgray;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    height: 70px;
+    width: 90%;
+    margin: auto;
+
+}
+
+.ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+    /* letter-spacing: 1px; */
+
+}
+
+.ul li i {
+    font-size: 0.8rem;
+}
+
+/* .btn button .bi-arrow-right{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+} */
+.btn button {
+    border: none;
+    padding: 0.9rem 2rem;
+    background: var(--primary);
+    font-size: 1rem;
+    /* font-weight: bold; */
+    border-radius: 25px;
+    color: white;
+}
+
+.bi-list {
+    font-size: 2rem;
+    display: none;
+}
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    gap: 30px;
+}
+.left-section{
+    width: 50%;
+}
+.left-section h1{
+    margin: 2rem 0;
+}
+.left-section .btn{
+padding: 0.8rem 1.5rem;
+background: var(--primary);
+color: white;
+border-radius: 25px;
+border: none;
+font-size: 1rem;
+}
+.responsibilities{
+    background-image: url('https: //simplexts.net/wp-content/uploads/2023/12/Untitled-design-10-1-1.png');
+background-position: center;
+}
+@media (max-width:1400px) {
+    nav{
+        width: 100%;
+    }
+    .ul{
+        font-size: 0.9rem;
+        gap: 1.5rem;
+    }
+.ul li i{
+    font-size: 0.7rem;
+}
+
+}
+@media(max-width:1024px){
+.bi-list {
+        margin-right: 0;
+        display: block;
+    }
+/* .logo-image img{
+    width: 150px;
+} */
+.ul{
+    /* font-size: 0.8rem;
+    gap: 1rem; */
+    display: none;
+}
+ }
+/* .ul li i{
+font-size: 0.7rem;
+} */
+/* .btn button{ */
+    /* padding: 0.7rem 1.5rem; */
+    /* display: none; */
+/* }
+} */
+/* @media (max-width:929px) {
+   .btn button{
+    padding: 0.5rem 1rem;
+    font-size:0.8rem;
+   }
+   nav{
+    width: 100%;
+   }
+
+    } */
+    /* @media (max-width:801px) {
+        .ul{
+        display: none;
+        }
+        .bi-list{
+            display: block;
+        }
+     } */
+@media(max-width:767px) {
+    .left {
+        display: none;
+    }
+
+    header {
+        justify-content: flex-start;
+    }
+        .ul {
+            display: none;
+        }
+    .btn button{
+        display: none;
+    }
+        .bi-list {
+        
+            display: block;
+        }
+        .hero-section{
+            flex-direction: column;
+        }
+        .left-section h1{
+            font-size: 1.5rem;
+        }
+
+}
